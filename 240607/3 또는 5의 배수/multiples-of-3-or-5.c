@@ -6,9 +6,9 @@ int main() {
     scanf("%d", &a);
 
     if ( a % 3 == 0 ){
-        printf ("YES/n");
+        printf ("YES\n");
     } else {
-        printf("NO/n");
+        printf("NO\n");
     }
 
     if ( a % 5 == 0 ){
