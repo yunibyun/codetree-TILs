@@ -2,9 +2,9 @@
 
 int main() {
     // 여기에 코드를 작성해주세요.
-    int n;
+    int n, area;
     scanf("%d", &n);
-    int area = n * n;
+    area = n * n;
     printf("%d", area);
 
     if (n < 5) {
