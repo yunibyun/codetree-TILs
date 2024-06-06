@@ -8,7 +8,7 @@ int main() {
     printf("%d", area);
 
     if (n < 5) {
-        printf("tiny");
+        printf("\ntiny");
     }
     return 0;
 }
