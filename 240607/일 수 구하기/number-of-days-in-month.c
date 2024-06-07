@@ -5,8 +5,8 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    if ( n % 2 == 1 || n == 10 || n == 12 ){
-        if ( n == 11 ){
+    if ( n % 2 == 1 || n == 8 || n == 12 ){
+        if ( n == 11 || n == 9 ){
             printf("30");
         } else {
             printf("31");
@@ -16,6 +16,6 @@ int main() {
     } else {
         printf("30");
     }
-    
+
     return 0;
 }
