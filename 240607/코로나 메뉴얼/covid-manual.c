@@ -9,14 +9,14 @@ int main() {
     scanf("%c %d\n", &symptoms_b, &temp_b);
     scanf("%c %d", &symptoms_c, &temp_c);
     
-    if ((symptoms_a = 'Y') && (temp_a >= 37)){
-        if (((symptoms_b = 'Y') && (temp_b >= 37)) || ((symptoms_c = 'Y') && (temp_c >= 37))){
+    if ((symptoms_a == 'Y') && (temp_a >= 37)){
+        if (((symptoms_b == 'Y') && (temp_b >= 37)) || ((symptoms_c == 'Y') && (temp_c >= 37))){
             printf ("E");
         } else {
             printf ("N");
         }
-    } else if ((symptoms_b = 'Y') && (temp_b >= 37)){
-        if ((symptoms_c = 'Y') && (temp_c >= 37)){
+    } else if ((symptoms_b == 'Y') && (temp_b >= 37)){
+        if ((symptoms_c == 'Y') && (temp_c >= 37)){
             printf ("E");
         } else {
             printf ("N");
