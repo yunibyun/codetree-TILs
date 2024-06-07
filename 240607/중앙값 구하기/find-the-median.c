@@ -14,20 +14,12 @@ c > b > a
 c > a > b
 */
 
-if (a >= b){
-    if (b >= c){
-        printf("%d", b);
-    } else if (a <= c){
-        printf("%d", a);
-    } else {
-        printf("%d", b);
-    }
-} else if ( c < a ){
+if (( b > a && a > c ) || ( c > a && a > b )){
     printf("%d", a);
-} else if ( b > c ){
-    printf("%d", c);
-} else {
+} else if (( a > b && b > c ) || (c > b && b > a)){
     printf("%d", b);
+} else if (( a > c && c > b) || ( b > c && c > a )){
+    printf("%d", c);
 }
     return 0;
 }
