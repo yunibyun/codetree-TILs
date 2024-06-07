@@ -5,7 +5,7 @@ int main() {
     int n;
     scanf("%d", &n);
 
-    if ( n % 2 == 1 || n == 8 || n == 12 ){
+    if ( n % 2 == 1 || n == 8 || n == 12 || n == 10 ){
         if ( n == 11 || n == 9 ){
             printf("30");
         } else {
