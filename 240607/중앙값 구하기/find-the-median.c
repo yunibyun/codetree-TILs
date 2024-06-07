@@ -5,17 +5,25 @@ int main() {
     int a, b, c;
     scanf("%d %d %d", &a, &b, &c);
 
+/* case 
+a > b > c
+a > c > b
+b > a > c
+b > c > a
+c > b > a
+c > a > b
+*/
     if ( a > b && b > c ){
         printf("%d", b);
-    } else if ( a > b && c > b && c > a ){
-        printf("%d", a);
-    } else if ( b > a && b > c && a > c){
-        printf("%d", a);
-    } else if ( b > a && b > c && c > a){
+    } else if ( a > c && c > b){
         printf("%d", c);
-    } else if ( c > a && a > b ) {
+    } else if ( b > a && a > c){
         printf("%d", a);
-    } else if ( c > b && b > a && c > a){
+    } else if ( b > c && c > a){
+        printf("%d", c);
+    } else if ( c > b && b > a ) {
+        printf("%d", b);
+    } else if ( c > a && a > b){
         printf("%d", b);
     }
     return 0;
