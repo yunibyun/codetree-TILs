@@ -13,18 +13,21 @@ b > c > a
 c > b > a
 c > a > b
 */
-    if ( a >= b && b >= c ){
+
+if (a >= b){
+    if (b >= c){
         printf("%d", b);
-    } else if ( a >= c && c >= b){
-        printf("%d", c);
-    } else if ( b >= a && a >= c){
+    } else if (a <= c){
         printf("%d", a);
-    } else if ( b >= c && c >= a){
-        printf("%d", c);
-    } else if ( c >= b && b >= a ) {
-        printf("%d", b);
-    } else if ( c >= a && a >= b){
+    } else {
         printf("%d", b);
     }
+} else if ( c < a ){
+    printf("%d", a);
+} else if ( b > c ){
+    printf("%d", c);
+} else {
+    printf("%d", b);
+}
     return 0;
 }
