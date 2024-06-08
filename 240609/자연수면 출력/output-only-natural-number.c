@@ -6,7 +6,7 @@ int main() {
     scanf("%d %d", &a, &b);
 
     if ( a > 0 ){
-        for( int i = 1; i <= b; i++ ){
+        for( int i = 1; i <= b; i += 1 ){
             printf("%d", a);
         }
     } else if ( a <= 0 ){
