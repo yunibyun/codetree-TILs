@@ -10,8 +10,9 @@ int main() {
     if (c == 'A') {
         for (int i = 1; i <= n; i++){
             printf("%d ", i);
-    }} else if (c == 'D'){
-        for (int i = n; n <= i; i--){
+    }
+    } else if (c == 'D'){
+        for (int i = n; n <= i; i-= 1){
             printf("%d ", i);
         }
     }
