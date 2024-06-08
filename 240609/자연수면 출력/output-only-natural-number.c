@@ -9,7 +9,7 @@ int main() {
         for( int i = 1; i <= b; i++ ){
             printf("%d", a);
         }
-    } else if ( a == 0){
+    } else if ( a <= 0 ){
         printf("%d", a);
     }
     return 0;
