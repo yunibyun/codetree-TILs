@@ -29,7 +29,6 @@ int main() {
                 }
             }
             else if ( n <= 1000 ) {
-                if ( n % 2 )
             }
         }
 
