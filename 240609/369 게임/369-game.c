@@ -11,7 +11,7 @@ int main() {
             printf("0 ");
         } else if ( i % 10 == 3 || i % 10 == 6 || i % 10 == 9) {
             printf("0 ");
-        } else if ( (i / 10) % 3 == 3 || (i / 10) % 3 == 6 || (i / 10) % 10 == 9) {
+        } else if ( (i / 10) == 3 || (i / 10) == 6 || (i / 10) == 9) {
             printf("0 ");
         } else {
             printf("%d ", i);
