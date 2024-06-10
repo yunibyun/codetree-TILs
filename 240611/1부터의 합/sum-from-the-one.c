@@ -15,13 +15,14 @@ int main() {
 
     // iteration을 통해서 1부터 차례대로 합을 구하기
     for (int i = 1; i <= 100; i++){
+        // sum에다 i 하나씩 더하기
+        sum += i;
         // 합이 n보다 커지면 for 문에서 나오도록 설계
         if (sum >= n) {
             // n 이상이 되는 순간에 더해진 숫자가 무엇인지 출력
-            printf("%d", i - 1);
+            printf("%d", i);
             break;
         }
-        sum += i;
     }
 
     return 0;
