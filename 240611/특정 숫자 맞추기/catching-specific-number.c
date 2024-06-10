@@ -10,10 +10,8 @@ int main() {
         scanf("%d\n", &n);
         if (25 < n){
             printf("Lower\n");
-            continue;
         } else if (n < 25) {
             printf("Higher\n");
-            continue;
         } else if ( n == 25 ) {
             printf("Good");
             break;
