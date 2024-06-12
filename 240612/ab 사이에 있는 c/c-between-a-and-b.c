@@ -18,8 +18,9 @@ int main() {
         }
     }
 
-    //
-    if ( satisfied = true ) {
+    // satisfied의 값이 true일 경우 YES 출력, 아닐 경우 NO 출력
+    // 자꾸 대입 연산자랑 체크하는 연산자랑 실수하는데 주의하자!
+    if ( satisfied == true ) {
         printf("YES");
     } else {
         printf("NO");
