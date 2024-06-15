@@ -1,15 +1,19 @@
-#include <stdio.h>
+#include<stdio.h>
 
 int main() {
-    // 여기에 코드를 작성해주세요.
+    // 변수 선언 및 입력
     int n;
     scanf("%d", &n);
-
-    for (int i = 0; i < n; i++){
-        for (int j = 1; j <=n ; j++){
-            printf("%d ", i + j);
-        }
-        printf("\n");
-    }
-    return 0;
+	int cnt = 1;
+	
+	// cnt를 이용해 n칸의 정사각형에 올바른 숫자를 출력합니다.
+	for(int i = 0; i < n; i++) {
+		for(int j = 0; j < n; j++) {
+			printf("%d ", cnt);
+			cnt++;
+		}
+		printf("\n");
+	}
+	
+	return 0;
 }
