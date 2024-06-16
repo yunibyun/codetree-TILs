@@ -1,25 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    // 여기에 코드를 작성해주세요.
+    // 정수 배열 선언
     int arr[10];
     int cnt = 0;
 
-    for (int i = 0; i < 10; i++){
+    // 10개의 정수를 배열에 입력받으며 0이 있는지 확인합니다.
+    for(int i = 0; i < 10; i++) {
         scanf("%d", &arr[i]);
+        if(arr[i] == 0)
+            break;
+        cnt++;
     }
 
-    for (int i = 0; i < 10; i++){
-        if (arr[i] != 0){
-            cnt++;
-        } else {
-                break;
-            } 
-        }
-
-    for (int i = (cnt - 1); i >= 0; i--){
+    // 0이 입력되기 전까지의 수를 반대 순서로 출력합니다.
+    for(int i = cnt - 1; i >= 0; i--) {
         printf("%d ", arr[i]);
     }
-    
+
     return 0;
 }
