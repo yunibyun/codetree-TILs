@@ -5,9 +5,9 @@ int main() {
     // 정수 n을 입력받아요
     int n;
     scanf("%d", &n);
-    
+    int arr[100];
+
     for(int i = 0; i < n; i++){
-        int arr[100];
 	 	scanf("%d ", &arr[i]);
 
 		// 거꾸로 (n-1)번째 index부터 arr 배열을 iteration 해요
