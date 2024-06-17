@@ -8,14 +8,11 @@ int main() {
     
     for(int i = 0; i < n; i++){
         int arr[100];
-        int mtp_2[100];
+	 	scanf("%d ", &arr[i]);
 
-        // n개의 정수를 입력받아요
-        for (int j = 0; j < n; j++){
-            scanf("%d ", &arr[j]);
-        }
-
-		for (int j = n - 1; 0 <= j; j--){
+		// 거꾸로 (n-1)번째 index부터 arr 배열을 iteration 해요
+		for (int j = n - 1; j >= 0; j--){
+			// arr[j] 가 짝수일 경우 값을 출력해요
 			if(arr[j] % 2 == 0){
 			printf("%d ", arr[j]);
 			}
